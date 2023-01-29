@@ -1,15 +1,17 @@
+using ConsoleApp1;
+
 Console.WriteLine("1 - Word counter\n2 - Calculator");
 Console.Write("Choose program: ");
 
-int choice = Convert.ToInt32(Console.ReadLine());
+var menu = new MenuProgram(Convert.ToInt32(Console.ReadLine()));
 
-switch (choice)
+switch (menu.choice)
 {
     case 1:
         Console.Write("Name of file: ");
         try
         {
-            Console.WriteLine("Number of words: " + CountWords(File.ReadAllText(Console.ReadLine())));
+            Console.WriteLine("Number of words: " + MenuProgram.CountWords(File.ReadAllText(Console.ReadLine())));
         }
         catch (FileNotFoundException e)
         {
@@ -25,32 +27,10 @@ switch (choice)
         Console.Write("Enter the operation (+, -, *, /): ");
         char operation = Convert.ToChar(Console.ReadLine());
 
-        Console.WriteLine($"{a} {operation} {b} = {Calculator(a, b, operation)}");
+        Console.WriteLine($"{a} {operation} {b} = {MenuProgram.Calculator(a, b, operation)}");
 
         break;
     default:
         Console.WriteLine("You can choose only 1 or 2");
         break;
-}
-
-int CountWords(string sentence)
-{
-    return sentence.Split(' ').Length;
-}
-
-double Calculator(double a, double b, char operation)
-{
-    switch (operation)
-    {
-        case '+':
-            return a + b;
-        case '-':
-            return a - b;
-        case '*':
-            return a * b;
-        case '/':
-            return a / b;
-        default:
-            throw new ArgumentException("Unknown operation", nameof(operation));
-    }
 }
