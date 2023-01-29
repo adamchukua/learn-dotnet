@@ -12,11 +12,6 @@
             _choice = choice;
         }
 
-        public int GetChoice()
-        {
-            return _choice;
-        }
-
         // Run program that user choose
         public void Execute()
         {
