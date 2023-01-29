@@ -2,11 +2,16 @@
 {
     internal class MenuProgram
     {
-        public int choice;
+        private int _choice;
 
         public MenuProgram(int choice)
         {
-            this.choice = choice;
+            _choice = choice;
+        }
+
+        public int GetChoice()
+        {
+            return _choice;
         }
 
         public static int CountWords(string sentence)

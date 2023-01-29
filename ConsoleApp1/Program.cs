@@ -5,7 +5,7 @@ Console.Write("Choose program: ");
 
 var menu = new MenuProgram(Convert.ToInt32(Console.ReadLine()));
 
-switch (menu.choice)
+switch (menu.GetChoice())
 {
     case 1:
         Console.Write("Name of file: ");
