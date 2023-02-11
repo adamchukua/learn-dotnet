@@ -1,32 +1,70 @@
 # Контрольні питання
 
-<a href="#lab1">Лабораторна робота 1</a>
-<a href="#lab2">Лабораторна робота 1</a>
-
-## Лабораторна робота 1
+<ul>
+  <li><a href="#lab1">Лабораторна робота 1</a></li>
+  <li><a href="#lab2">Лабораторна робота 2</a></li>
+  <li><a href="#lab2">Лабораторна робота 3</a></li>
+</ul>
 
 <div id="lab1">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum nisi quis commodo placerat. Pellentesque eget efficitur diam. Donec interdum pellentesque dapibus. Maecenas vulputate nec eros quis imperdiet. Aliquam a hendrerit mauris. Maecenas in nunc volutpat, accumsan est ac, lobortis justo. Mauris blandit feugiat gravida. Integer at ullamcorper diam, et consequat massa. Aenean auctor interdum enim, ut imperdiet nunc lobortis vel. Ut eget malesuada tellus.
-
-Duis nec dolor eleifend, elementum velit at, maximus massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In consectetur lacus congue ipsum rutrum tempus. Nullam tempus vel est iaculis fermentum. Maecenas aliquam nibh purus, id lobortis urna placerat sed. In sit amet bibendum diam. Praesent augue sapien, accumsan a tortor vel, tempor finibus magna. Sed condimentum tellus et neque mattis ullamcorper. Donec lacinia condimentum mi, quis iaculis dolor accumsan at. Vivamus nulla dolor, mattis non dapibus et, venenatis vel lectus.
-
-Morbi interdum dictum lorem id scelerisque. Maecenas ut commodo erat. Aenean non lectus ultricies, consequat sapien ac, dapibus eros. Nullam varius mauris at porta tincidunt. Pellentesque aliquet sagittis diam, sit amet bibendum felis pharetra vitae. Quisque cursus hendrerit turpis, at convallis nisl interdum a. Nam vel lacus in ex mollis aliquet.
-
-Fusce magna magna, rhoncus eu commodo sit amet, vestibulum nec risus. Aliquam cursus sodales euismod. Curabitur finibus arcu nec ex pharetra, eu consectetur quam egestas. Aliquam id pulvinar magna. Proin pharetra nulla ac sollicitudin imperdiet. In vitae molestie est. Phasellus nec ullamcorper lorem. Nunc sit amet congue nibh. Duis hendrerit leo tortor, nec tincidunt risus aliquet at. Nullam vitae molestie ligula. Quisque sollicitudin, massa sed dictum consectetur, purus orci congue turpis, eu sollicitudin est purus et ipsum. Nullam fermentum, libero ac sollicitudin ultricies, risus ligula congue urna, id pulvinar elit orci in turpis.
-
-Fusce et enim ut nulla bibendum placerat. Vestibulum eu convallis magna. Cras ac magna mauris. In hac habitasse platea dictumst. Pellentesque varius fringilla nulla, suscipit pulvinar dolor pulvinar in. Vestibulum scelerisque tortor risus, eget semper mauris porttitor sed. Nullam et consectetur eros. Ut a massa id arcu pretium laoreet. Sed nec nisl venenatis, consequat lorem eget, aliquam orci. Ut a diam nunc.
+  <h2>Лабораторна робота 1</h2>
+  
+  <ol>
+    <li>Які мови програмування підтримує CLR?<br>
+    Можливо реалізувати підпрограми CLR на будь-якій мові, яка може бути скомпільована в збірку IL. Наприклад: C++, C#, Visual Basic і J#.</li>
+    <li>З яких компонентів складається CLR?<br>
+      Основними компонентами CLR є:
+      <ol>
+        <li>Common type system</li>
+        <li>Common language speciation</li>
+        <li>Garbage Collector</li>
+        <li>Just in Time Compiler</li>
+        <li>Metadata and Assemblies</li>
+      </ol></li>
+    <li>Скільки рівнів має Garbage Collector?<br>
+  Рівень 0 ідентифікує щойно створений об’єкт, який ніколи не позначався для збирання. Рівень 1 ідентифікує об’єкт, який витримав GC (позначено для збирання, але не видалено, оскільки було достатньо місця у купі). Рівень 2 ідентифікує об’єкт, який витримав більше одного циклу GC.</li>
+    <li>Коли викликається останній рівень GC?<br>
+  Коли не вистачає пам'яті і 2 попередніх рівні вже пройшли.</li>
+    <li>Що таке CLS?<br>
+  Щоб увімкнути сценарії повної взаємодії, усі об’єкти, створені в коді, мають покладатися на певну спільність у мовах, які їх використовують (є їхніми викликами). Оскільки існує велика кількість різних мов, .NET визначила ці спільні риси у так званій специфікації загальної мови (CLS). CLS визначає набір функцій, необхідних багатьом поширеним програмам. Він також надає свого роду рецепт для будь-якої мови, яка реалізована поверх .NET, щодо того, що вона повинна підтримувати.</li>
+  </ol>
 </div>
 
-## Лабораторна робота 2
+<div id="lab2">
+  <h2>Лабораторна робота 2</h2>
+  
+  <ol>
+    <li>Які базові бібліотеки використовувались для .NET Framework, .NET Core та Xamarin?<br>
+    Ті, які містяться в .NET Standard.</li>
+    <li>Що таке .NET Standard?<br>
+    .NET Standard – це набір API, доступний на всіх. Реалізації NET створять певний тип уніфікованості, переносимості, яка підтримує Net Core, Xamarin і .Net Framework. По суті, це набір бібліотек базових класів (BCL), які підтримують широкий спектр технологій.</li>
+    <li>Скільки існує видів бібліотек і які?<br>
+      <ul>
+        <li>Platform-specific class libraries</li>
+        <li>Portable class libraries</li>
+        <li>.NET Standard class libraries</li>
+        <li>Mono class libraries</li>
+      </ul></li>
+    <li>Для чого використовується Mono class libraries?<br>
+    Mono часто розглядається як кросплатформна реалізація .NET Framework. Частково це пояснюється тим, що бібліотеки .NET Framework для певної платформи можуть працювати у середовищі виконання Mono без модифікації чи повторної компіляції. Ця характеристика існувала до створення портативних бібліотек класів, тому було очевидним вибором увімкнути бінарну переносимість між .NET Framework і Mono (хоча це працювало лише в одному напрямку).</li>
+    <li>Яка бібліотека містить фундаментальні та базові класи?<br>
+    .NET Standard</li>
+  </ol>	
+</div>
 
 <div id="lab2">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum nisi quis commodo placerat. Pellentesque eget efficitur diam. Donec interdum pellentesque dapibus. Maecenas vulputate nec eros quis imperdiet. Aliquam a hendrerit mauris. Maecenas in nunc volutpat, accumsan est ac, lobortis justo. Mauris blandit feugiat gravida. Integer at ullamcorper diam, et consequat massa. Aenean auctor interdum enim, ut imperdiet nunc lobortis vel. Ut eget malesuada tellus.
-
-Duis nec dolor eleifend, elementum velit at, maximus massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In consectetur lacus congue ipsum rutrum tempus. Nullam tempus vel est iaculis fermentum. Maecenas aliquam nibh purus, id lobortis urna placerat sed. In sit amet bibendum diam. Praesent augue sapien, accumsan a tortor vel, tempor finibus magna. Sed condimentum tellus et neque mattis ullamcorper. Donec lacinia condimentum mi, quis iaculis dolor accumsan at. Vivamus nulla dolor, mattis non dapibus et, venenatis vel lectus.
-
-Morbi interdum dictum lorem id scelerisque. Maecenas ut commodo erat. Aenean non lectus ultricies, consequat sapien ac, dapibus eros. Nullam varius mauris at porta tincidunt. Pellentesque aliquet sagittis diam, sit amet bibendum felis pharetra vitae. Quisque cursus hendrerit turpis, at convallis nisl interdum a. Nam vel lacus in ex mollis aliquet.
-
-Fusce magna magna, rhoncus eu commodo sit amet, vestibulum nec risus. Aliquam cursus sodales euismod. Curabitur finibus arcu nec ex pharetra, eu consectetur quam egestas. Aliquam id pulvinar magna. Proin pharetra nulla ac sollicitudin imperdiet. In vitae molestie est. Phasellus nec ullamcorper lorem. Nunc sit amet congue nibh. Duis hendrerit leo tortor, nec tincidunt risus aliquet at. Nullam vitae molestie ligula. Quisque sollicitudin, massa sed dictum consectetur, purus orci congue turpis, eu sollicitudin est purus et ipsum. Nullam fermentum, libero ac sollicitudin ultricies, risus ligula congue urna, id pulvinar elit orci in turpis.
-
-Fusce et enim ut nulla bibendum placerat. Vestibulum eu convallis magna. Cras ac magna mauris. In hac habitasse platea dictumst. Pellentesque varius fringilla nulla, suscipit pulvinar dolor pulvinar in. Vestibulum scelerisque tortor risus, eget semper mauris porttitor sed. Nullam et consectetur eros. Ut a massa id arcu pretium laoreet. Sed nec nisl venenatis, consequat lorem eget, aliquam orci. Ut a diam nunc.
+  <h2>Лабораторна робота 3</h2>
+  
+  <ol>
+    <li>У чому відмінність асинхронного і багатопоточного програмування?<br>Асинхронне програмування це парадигма програмування, в якій процеси адресуються багатьма паралельно за допомогою засобів синхронізації та зв'язків. Це дозволяє програмі завантажувати відтак від послідовності кроків. Багатопоточне програмування використовує один або декілька потоків виконання для адресації декількох завдань за допомогою одного або двох процесів.</li>
+    <li>Які типи даних може повертати async – await?<br>Task, Task<T> void, IAsyncEnumerable<T></li>
+    <li>Які модифікатори для параметрів не можна використовувати в асинхронних методах?<br>ref, out, params</li>
+    <li>Які властивості надає клас Thread? Опишіть їх.<br>Клас Thread надає властивості, такі як обслуговування часу, призупинення, продовження, переривання. В мові програмування C# клас Thread також надає методи для завантаження або ініціалізації потоку, отримання стану потоку, порівняння двох потоків.</li>
+    <li>Які методи надає клас Thread? Опишіть їх.<br>Abort() використовується для завершення потоку.
+Interrupt() використовується для переривання потоку, який знаходиться в стані WaitSleepJoin.
+Join() використовується для блокування всіх викликаючих потоків, доки цей потік не завершиться.
+ResetAbort() використовується для скасування запиту Abort для поточного потоку.
+Sleep() використовується для призупинення поточного потоку на вказані мілісекунди.
+Start() змінює поточний стан потоку на Runnable.</li>
+  </ol>	
 </div>
