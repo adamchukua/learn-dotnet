@@ -6,7 +6,7 @@
 </ul>
 
 <div id="lab1">
-## Лабораторна робота 1
+  <h2>Лабораторна робота 1</h2>
   
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum nisi quis commodo placerat. Pellentesque eget efficitur diam. Donec interdum pellentesque dapibus. Maecenas vulputate nec eros quis imperdiet. Aliquam a hendrerit mauris. Maecenas in nunc volutpat, accumsan est ac, lobortis justo. Mauris blandit feugiat gravida. Integer at ullamcorper diam, et consequat massa. Aenean auctor interdum enim, ut imperdiet nunc lobortis vel. Ut eget malesuada tellus.
 
@@ -20,7 +20,7 @@ Fusce et enim ut nulla bibendum placerat. Vestibulum eu convallis magna. Cras ac
 </div>
 
 <div id="lab2">
-## Лабораторна робота 2
+  <h2>Лабораторна робота 2</h2>
   
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum nisi quis commodo placerat. Pellentesque eget efficitur diam. Donec interdum pellentesque dapibus. Maecenas vulputate nec eros quis imperdiet. Aliquam a hendrerit mauris. Maecenas in nunc volutpat, accumsan est ac, lobortis justo. Mauris blandit feugiat gravida. Integer at ullamcorper diam, et consequat massa. Aenean auctor interdum enim, ut imperdiet nunc lobortis vel. Ut eget malesuada tellus.
 
